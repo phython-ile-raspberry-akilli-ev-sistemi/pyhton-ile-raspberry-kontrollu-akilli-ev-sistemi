@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akıllı Ev Sistemi</title>
+<meta http-equiv="refresh" content="2">
+<link href="static/stil.css" type="text/css" rel="stylesheet" >
+</head>
+
+<body>
+<div class="container">
+  <div class="banner ">
+    
+
+    <h2>Akıllı Ev Sistemi Kontrol Uygulaması</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  </div>
+  <div class="col-4 floatleft databox mavibg1 padsag beyazyazi">Ortam Sıcaklığı : </div>
+  <div class="col-8 floatleft databox saribg mleft1">{{sicaklik}}<sup>o</sup>C</div>
+  <div class="col-4 floatleft databox mavibg1 padsag beyazyazi">Havalandırma : </div>
+  <div class="col-8 floatleft databox saribg mleft1">{{havalandirmaDurum}}</div>
+  <div class="col-4 floatleft databox mavibg1 padsag beyazyazi">Hırsız Alarmı : </div>
+  <div class="col-8 floatleft databox saribg mleft1">{{hirsiz}}</div>
+  <div class="col-4 floatleft databox mavibg1 padsag beyazyazi">Garaj Kapısı: </div>
+  <div class="col-8 floatleft databox saribg mleft1">{{garaj}}</div>
+    
+    <a class="{{hirsizAcik}}" href="/hirsizalarmkontrol-acik"> <div class="col-2 floatleft mright1 {{hirsizAcik}}">ON</div>  </a>
+  <div class="col-8 floatleft databox mavibg2"> Hırsız Alarmı Kontrolü</div> 
+  <a class="{{hirsizKapali}}" href="/hirsizalarmkontrol-kapali"> <div class="col-2 floatleft mleft1 {{hirsizKapali}}">OFF</div>  </a> 
+  
+
+  <a class="{{bahceAcik}}" href="/bahce-acik"> <div class="col-2 floatleft mright1 {{bahceAcik}}">ON</div>  </a>
+  <div class="col-8 floatleft databox mavibg2"> Bahçe Aydınlatması</div>
+  <a class="{{bahceKapali}}" href="/bahce-kapali"> <div class="col-2 floatleft mleft1 {{bahceKapali}}">OFF</div>  </a> 
+    
+  <a class="{{odaAcik}}" href="/oda-acik"> <div class="col-2 floatleft mright1 {{odaAcik}}">ON</div>  </a>
+  <div class="col-8 floatleft databox mavibg2"> Oda Aydınlatması</div>
+  <a class="{{odaKapali}}" href="/oda-kapali">  <div class="col-2 floatleft mleft1 {{odaKapali}}">OFF</div>  </a> 
+    
+    
+    
+    <div class="col-12 floatleft footer beyazyazi">&copy; RobokodPython Grubu - 2020</div> 
+</div>
+</body>
+</html>
